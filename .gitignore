@@ -1,0 +1,69 @@
+# =============================================================================
+# CropXpert .gitignore
+# =============================================================================
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+venv/
+env/
+.venv/
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+htmlcov/
+.coverage
+
+# --- Node ---
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+frontend/dist/
+
+# --- Environment ---
+.env
+.env.local
+.env.*.local
+
+# --- IDE ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# --- Docker ---
+docker-compose.override.yml
+
+# --- ML ---
+ml/data/raw/*
+ml/data/processed/*
+ml/models/*.pt
+ml/models/*.onnx
+ml/models/*.tflite
+ml/models/*.pkl
+mlruns/
+mlartifacts/
+!ml/data/raw/.gitkeep
+!ml/data/processed/.gitkeep
+!ml/models/.gitkeep
+
+# --- Storage ---
+minio-data/
+uploads/
+
+# --- Misc ---
+*.log
+*.bak
+tmp/

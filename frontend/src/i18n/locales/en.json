@@ -1,0 +1,25 @@
+{
+  "app_name": "CropXpert",
+  "tagline": "AI-Powered Crop Disease & Pest Detection",
+  "nav": {
+    "home": "Home",
+    "detect": "Detect Disease",
+    "forecast": "Outbreak Forecast",
+    "map": "Hotspot Map",
+    "advisory": "Advisories",
+    "dashboard": "Dashboard"
+  },
+  "detection": {
+    "upload_title": "Upload Crop Image",
+    "upload_description": "Take a photo or upload an image of the affected crop",
+    "analyzing": "Analyzing image...",
+    "result": "Detection Result"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "retry": "Retry",
+    "submit": "Submit",
+    "cancel": "Cancel"
+  }
+}

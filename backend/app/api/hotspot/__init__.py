@@ -1,0 +1,1 @@
+"""Hotspot API endpoints."""

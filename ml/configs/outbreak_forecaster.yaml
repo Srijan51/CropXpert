@@ -1,0 +1,35 @@
+# Outbreak Risk Forecaster Configuration (XGBoost)
+model:
+  algorithm: xgboost  # Options: xgboost, random_forest, gradient_boosting
+  n_estimators: 500
+  max_depth: 8
+  learning_rate: 0.05
+
+features:
+  weather:
+    - temperature
+    - humidity
+    - rainfall
+    - wind_speed
+    - dew_point
+  temporal:
+    - month
+    - day_of_year
+    - season
+  historical:
+    - past_outbreak_count
+    - days_since_last_outbreak
+
+data:
+  train_csv: ../data/processed/outbreak/train.csv
+  val_csv: ../data/processed/outbreak/val.csv
+  test_csv: ../data/processed/outbreak/test.csv
+
+training:
+  cv_folds: 5
+  early_stopping_rounds: 50
+  eval_metric: auc
+
+mlflow:
+  experiment_name: outbreak_forecaster
+  tracking_uri: http://localhost:5000

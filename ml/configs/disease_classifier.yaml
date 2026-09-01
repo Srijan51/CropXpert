@@ -1,0 +1,37 @@
+# Disease Classifier Training Configuration
+model:
+  architecture: efficientnet_b0  # Options: efficientnet_b0, efficientnet_b3, mobilenetv3_large
+  pretrained: true
+  num_classes: 38  # PlantVillage classes (adjust per dataset)
+  severity_head: true  # Multi-task: severity estimation (mild/moderate/severe)
+
+data:
+  train_dir: ../data/processed/disease/train
+  val_dir: ../data/processed/disease/val
+  test_dir: ../data/processed/disease/test
+  image_size: 224
+  batch_size: 32
+  num_workers: 4
+  augmentations:
+    - horizontal_flip
+    - vertical_flip
+    - random_rotation
+    - color_jitter
+    - random_resized_crop
+
+training:
+  epochs: 50
+  learning_rate: 0.001
+  weight_decay: 0.0001
+  scheduler: cosine_annealing
+  early_stopping_patience: 10
+  mixed_precision: true
+
+export:
+  onnx: true
+  tflite: true
+  quantize: true
+
+mlflow:
+  experiment_name: disease_classifier
+  tracking_uri: http://localhost:5000

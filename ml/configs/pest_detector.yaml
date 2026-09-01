@@ -1,0 +1,25 @@
+# Pest Detector Training Configuration (YOLOv8/v11)
+model:
+  architecture: yolov8m  # Options: yolov8n, yolov8s, yolov8m, yolo11m
+  pretrained: true
+  num_classes: 20  # Adjust per pest species dataset
+
+data:
+  dataset_yaml: ../data/processed/pest/dataset.yaml
+  image_size: 640
+  batch_size: 16
+  num_workers: 4
+
+training:
+  epochs: 100
+  learning_rate: 0.01
+  patience: 20
+  augment: true
+
+export:
+  onnx: true
+  tflite: true
+
+mlflow:
+  experiment_name: pest_detector
+  tracking_uri: http://localhost:5000
