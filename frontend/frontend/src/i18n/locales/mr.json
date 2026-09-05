@@ -1,0 +1,56 @@
+{
+  "app_name": "क्रॉपएक्सपर्ट",
+  "tagline": "AI-चालित पीक रोग आणि कीड ओळख",
+  "nav": {
+    "home": "मुख्यपृष्ठ",
+    "solutions": "उपाय",
+    "resources": "संसाधने",
+    "pricing": "किंमत",
+    "about": "आमच्याबद्दल",
+    "contact": "संपर्क साधा",
+    "detect": "रोग ओळखा",
+    "forecast": "उद्रेक अंदाज",
+    "map": "हॉटस्पॉट नकाशा",
+    "advisory": "सल्ला",
+    "dashboard": "डॅशबोर्ड"
+  },
+  "landing": {
+    "headline": "Protect Every Crop. Grow With Confidence.",
+    "subtext": "AI crop intelligence for early diseases detection, weather risk forecasting and soil insights-all in one platform.",
+    "explore": "Explore CropXpert",
+    "partners_tech": "Our Technology Partners",
+    "partners_ai": "AI Vision",
+    "partners_sat": "Satellite Insights",
+    "partners_weather": "Weather Data",
+    "partners_soil": "Soil Intelligence",
+    "partners_network": "Local Networks"
+  },
+  "auth": {
+    "login": "लॉग इन",
+    "register": "नोंदणी करा",
+    "email": "ईमेल",
+    "password": "पासवर्ड",
+    "name": "पूर्ण नाव",
+    "phone": "फोन नंबर",
+    "role": "भूमिका",
+    "role_farmer": "शेतकरी",
+    "role_extension_worker": "विस्तार कार्यकर्ता",
+    "role_officer": "अधिकारी",
+    "language": "भाषा",
+    "no_account": "खाते नाही?",
+    "has_account": "आधीपासून खाते आहे?"
+  },
+  "detection": {
+    "upload_title": "पिकाचे छायाचित्र अपलोड करा",
+    "upload_description": "प्रभावित पिकाचा फोटो काढा किंवा अपलोड करा",
+    "analyzing": "छायाचित्राचे विश्लेषण होत आहे...",
+    "result": "ओळख निकाल"
+  },
+  "common": {
+    "loading": "लोड होत आहे...",
+    "error": "एक त्रुटी आली",
+    "retry": "पुन्हा प्रयत्न करा",
+    "submit": "सबमिट करा",
+    "cancel": "रद्द करा"
+  }
+}
