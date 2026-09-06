@@ -3,11 +3,42 @@
   "tagline": "AI-संचालित फसल रोग और कीट पहचान",
   "nav": {
     "home": "होम",
+    "solutions": "समाधान",
+    "resources": "संसाधन",
+    "pricing": "मूल्य निर्धारण",
+    "about": "हमारे बारे में",
+    "contact": "संपर्क करें",
     "detect": "रोग पहचानें",
     "forecast": "प्रकोप पूर्वानुमान",
     "map": "हॉटस्पॉट मैप",
     "advisory": "सलाह",
     "dashboard": "डैशबोर्ड"
+  },
+  "landing": {
+    "headline": "Protect Every Crop. Grow With Confidence.",
+    "subtext": "AI crop intelligence for early diseases detection, weather risk forecasting and soil insights-all in one platform.",
+    "explore": "Explore CropXpert",
+    "partners_tech": "Our Technology Partners",
+    "partners_ai": "AI Vision",
+    "partners_sat": "Satellite Insights",
+    "partners_weather": "Weather Data",
+    "partners_soil": "Soil Intelligence",
+    "partners_network": "Local Networks"
+  },
+  "auth": {
+    "login": "लॉग इन",
+    "register": "रजिस्टर",
+    "email": "ईमेल",
+    "password": "पासवर्ड",
+    "name": "पूरा नाम",
+    "phone": "फ़ोन नंबर",
+    "role": "भूमिका",
+    "role_farmer": "किसान",
+    "role_extension_worker": "विस्तार कार्यकर्ता",
+    "role_officer": "अधिकारी",
+    "language": "भाषा",
+    "no_account": "खाता नहीं है?",
+    "has_account": "पहले से खाता है?"
   },
   "detection": {
     "upload_title": "फसल की तस्वीर अपलोड करें",
