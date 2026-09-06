@@ -52,7 +52,7 @@ export const LoginPage: React.FC = () => {
       <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
 
       {/* Top Navbar */}
-      <nav className="relative z-20 flex items-center justify-between px-8 sm:px-12 py-4">
+      <nav className="relative z-20 flex items-center justify-between px-4 sm:px-8 lg:px-12 py-3 sm:py-4">
         <Link to="/" className="flex items-center gap-2">
           <img src="/logo-icon.png" alt="CropXpert Icon" className="w-10 h-10 object-contain" />
           <img src="/logo-text.png" alt="CropXpert" className="h-7 object-contain" />
@@ -65,11 +65,11 @@ export const LoginPage: React.FC = () => {
       </nav>
 
       {/* Main content */}
-      <div className="relative z-10 flex-1 flex items-center justify-center px-6 py-8">
-        <div className="w-full max-w-6xl flex flex-col md:flex-row items-center gap-12 md:gap-20">
+      <div className="relative z-10 flex-1 flex items-center justify-center px-4 sm:px-6 py-6 sm:py-8">
+        <div className="w-full max-w-6xl flex flex-col md:flex-row items-center justify-center gap-8 md:gap-20">
 
           {/* Left: Hero section */}
-          <div className="flex-1 text-white space-y-7 max-w-xl">
+          <div className="hidden md:flex flex-col flex-1 text-white space-y-7 max-w-xl">
             {/* Eyebrow badge */}
             <div className="inline-flex items-center gap-2 bg-white/15 backdrop-blur-md border border-white/20 rounded-full px-4 py-1.5">
               <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
@@ -137,8 +137,8 @@ export const LoginPage: React.FC = () => {
           </div>
 
           {/* Right: Premium Login Card */}
-          <div className="w-full max-w-sm">
-            <div className="bg-white/95 backdrop-blur-xl rounded-3xl shadow-[0_32px_64px_rgba(0,0,0,0.35)] p-8 border border-white/60 space-y-5">
+          <div className="w-full max-w-sm mx-auto">
+            <div className="bg-white/95 backdrop-blur-xl rounded-3xl shadow-[0_32px_64px_rgba(0,0,0,0.35)] p-6 sm:p-8 border border-white/60 space-y-5">
               {/* Card Header */}
               <div className="flex flex-col items-center gap-1 pb-1">
                 <img src="/logo-icon.png" alt="CropXpert" className="w-12 h-12 object-contain mb-1" />
