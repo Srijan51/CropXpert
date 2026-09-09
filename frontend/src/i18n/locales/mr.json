@@ -15,15 +15,18 @@
     "dashboard": "डॅशबोर्ड"
   },
   "landing": {
-    "headline": "Protect Every Crop. Grow With Confidence.",
-    "subtext": "AI crop intelligence for early diseases detection, weather risk forecasting and soil insights-all in one platform.",
-    "explore": "Explore CropXpert",
-    "partners_tech": "Our Technology Partners",
-    "partners_ai": "AI Vision",
-    "partners_sat": "Satellite Insights",
-    "partners_weather": "Weather Data",
-    "partners_soil": "Soil Intelligence",
-    "partners_network": "Local Networks"
+    "headline": "प्रत्येक पिकाचे संरक्षण करा. आत्मविश्वासाने वाढवा.",
+    "headline_line1": "प्रत्येक पिकाचे संरक्षण करा.",
+    "headline_part1": "आत्मविश्वासाने ",
+    "headline_highlight": "वाढवा.",
+    "subtext": "लवकर रोग ओळख, हवामानातील जोखमीचा अंदाज आणि मातीविषयक माहिती देणारी AI पीक बुद्धिमत्ता - सर्व काही एका मंचावर.",
+    "explore": "CropXpert पाहा",
+    "partners_tech": "आमचे तंत्रज्ञान भागीदार",
+    "partners_ai": "AI व्हिजन",
+    "partners_sat": "उपग्रह अंतर्दृष्टी",
+    "partners_weather": "हवामान डेटा",
+    "partners_soil": "मातीची बुद्धिमत्ता",
+    "partners_network": "स्थानिक नेटवर्क"
   },
   "auth": {
     "login": "लॉग इन",

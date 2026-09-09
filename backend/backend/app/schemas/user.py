@@ -15,6 +15,13 @@ class UserCreate(BaseModel):
     language: str = "en"
 
 
+class LoginRequest(BaseModel):
+    """Credentials submitted to the login endpoint."""
+
+    username: str
+    password: str
+
+
 class UserResponse(BaseModel):
     """Schema for user response."""
 

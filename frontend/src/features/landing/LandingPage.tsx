@@ -33,10 +33,10 @@ export const LandingPage: React.FC = () => {
               letterSpacing: "0px",
             }}
           >
-            <span className="block" style={{ color: "#395c34" }}>Protect Every Crop.</span>
+            <span className="block" style={{ color: "#395c34" }}>{t("landing.headline_line1")}</span>
             <span className="block">
-              <span style={{ color: "#395c34" }}>Grow With </span>
-              <span style={{ color: "#8f2e29" }}>Confidence.</span>
+              <span style={{ color: "#395c34" }}>{t("landing.headline_part1")}</span>
+              <span style={{ color: "#8f2e29" }}>{t("landing.headline_highlight")}</span>
             </span>
           </h1>
           
@@ -46,9 +46,7 @@ export const LandingPage: React.FC = () => {
               color: "#395c34",
             }}
           >
-            AI crop intelligence for early diseases detection,<br/>
-            weather risk forecasting and soil insights-<br/>
-            all in one platform.
+            {t("landing.subtext")}
           </p>
           
           <div className="pt-2 flex items-center gap-4">
@@ -56,7 +54,7 @@ export const LandingPage: React.FC = () => {
               to="/register" 
               className="w-full sm:w-auto text-center inline-flex items-center justify-center gap-2 bg-[#8f2e29] hover:bg-[#7a2622] text-white px-7 py-3 rounded-xl font-medium text-base transition-all shadow-md"
             >
-              Explore CropXpert <span aria-hidden="true">→</span>
+              {t("landing.explore")} <span aria-hidden="true">→</span>
             </Link>
           </div>
         </div>

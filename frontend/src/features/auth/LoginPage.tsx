@@ -158,12 +158,13 @@ export const LoginPage: React.FC = () => {
               <form onSubmit={handleSubmit} className="space-y-4">
                 {/* Email field */}
                 <div className="space-y-1.5">
-                  <label className="block text-xs font-semibold text-gray-500 uppercase tracking-wide">
+                  <label htmlFor="login-username" className="block text-xs font-semibold text-gray-500 uppercase tracking-wide">
                     Email or Mobile Number
                   </label>
                   <div className="relative">
                     <Mail className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-[#8f2e29]/70" />
                     <input
+                      id="login-username"
                       type="text"
                       required
                       placeholder="Enter your email or mobile number"
@@ -177,7 +178,7 @@ export const LoginPage: React.FC = () => {
                 {/* Password field */}
                 <div className="space-y-1.5">
                   <div className="flex items-center justify-between">
-                    <label className="block text-xs font-semibold text-gray-500 uppercase tracking-wide">
+                    <label htmlFor="login-password" className="block text-xs font-semibold text-gray-500 uppercase tracking-wide">
                       Password
                     </label>
                     <a href="#" className="text-xs text-[#8f2e29] hover:underline font-semibold">
@@ -187,6 +188,7 @@ export const LoginPage: React.FC = () => {
                   <div className="relative">
                     <Lock className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-[#8f2e29]/70" />
                     <input
+                      id="login-password"
                       type={showPassword ? "text" : "password"}
                       required
                       placeholder="Enter your password"
@@ -198,6 +200,7 @@ export const LoginPage: React.FC = () => {
                       type="button"
                       onClick={() => setShowPassword(!showPassword)}
                       className="absolute right-3.5 top-1/2 -translate-y-1/2 text-gray-300 hover:text-gray-500 transition-colors"
+                      aria-label={showPassword ? "Hide password" : "Show password"}
                     >
                       {showPassword ? <EyeOff className="w-4 h-4" /> : <Eye className="w-4 h-4" />}
                     </button>

@@ -11,7 +11,7 @@ class Settings(BaseSettings):
     APP_NAME: str = "CropXpert"
     APP_ENV: str = "development"
     DEBUG: bool = True
-    SECRET_KEY: str = "change-me-to-a-random-secret-key"
+    SECRET_KEY: str
 
     # Database
     DATABASE_URL: str = "postgresql+asyncpg://cropxpert:cropxpert@localhost:5432/cropxpert"

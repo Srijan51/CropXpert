@@ -68,7 +68,7 @@ export const Navbar: React.FC = () => {
 
         {/* Right side: Language Switcher and Contact Button (Desktop) */}
         <div className="hidden md:flex items-center gap-4">
-          <div className="hidden lg:flex gap-2 text-white/90 bg-white/10 backdrop-blur-sm px-3 py-1.5 rounded-full text-xs font-medium border border-white/20">
+          <div className="flex gap-2 text-white/90 bg-white/10 backdrop-blur-sm px-3 py-1.5 rounded-full text-xs font-medium border border-white/20">
             <button
               onClick={() => changeLanguage("en")}
               className={`px-1.5 py-0.5 rounded ${
@@ -104,7 +104,7 @@ export const Navbar: React.FC = () => {
         <button
           type="button"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          className="md:hidden p-2.5 rounded-xl text-white bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/20 transition-all duration-200 focus:outline-none"
+          className="md:hidden p-2.5 rounded-xl text-white bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/20 transition-all duration-200 focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-transparent"
           aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
           aria-expanded={mobileMenuOpen}
         >
@@ -142,7 +142,7 @@ export const Navbar: React.FC = () => {
             <button
               type="button"
               onClick={() => setMobileMenuOpen(false)}
-              className="p-2 rounded-xl text-white/80 hover:text-white bg-white/10 hover:bg-white/20 transition-colors focus:outline-none"
+              className="p-2 rounded-xl text-white/80 hover:text-white bg-white/10 hover:bg-white/20 transition-colors focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-transparent"
               aria-label="Close menu"
             >
               <X className="w-6 h-6" />

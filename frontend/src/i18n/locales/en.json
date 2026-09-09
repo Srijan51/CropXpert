@@ -16,7 +16,10 @@
   },
   "landing": {
     "headline": "Protect Every Crop. Grow With Confidence.",
-    "subtext": "AI crop intelligence for early diseases detection, weather risk forecasting and soil insights-all in one platform.",
+    "headline_line1": "Protect Every Crop.",
+    "headline_part1": "Grow With ",
+    "headline_highlight": "Confidence.",
+    "subtext": "AI crop intelligence for early disease detection, weather risk forecasting and soil insights - all in one platform.",
     "explore": "Explore CropXpert",
     "partners_tech": "Our Technology Partners",
     "partners_ai": "AI Vision",

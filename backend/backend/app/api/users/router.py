@@ -1,14 +1,13 @@
 """User management and authentication API endpoints."""
 
 from fastapi import APIRouter, Depends, HTTPException, status
-from fastapi.security import OAuth2PasswordRequestForm
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy import select, or_
 
 from app.core.database import get_db
 from app.core.security import hash_password, verify_password, create_access_token
 from app.core.dependencies import get_current_user
-from app.schemas.user import UserCreate, UserResponse, TokenResponse
+from app.schemas.user import LoginRequest, UserCreate, UserResponse, TokenResponse
 from app.models.user import User
 
 router = APIRouter()
@@ -19,7 +18,7 @@ async def register_user(user_in: UserCreate, db: AsyncSession = Depends(get_db))
     """Register a new user (farmer or extension worker)."""
     stmt = select(User).where(or_(User.email == user_in.email, User.phone == user_in.phone))
     result = await db.execute(stmt)
-    existing_user = result.scalar_one_or_none()
+    existing_user = result.scalars().first()
     
     if existing_user:
         raise HTTPException(
@@ -43,13 +42,12 @@ async def register_user(user_in: UserCreate, db: AsyncSession = Depends(get_db))
 
 
 @router.post("/login", response_model=TokenResponse)
-async def login(form_data: dict, db: AsyncSession = Depends(get_db)):
+async def login(form_data: LoginRequest, db: AsyncSession = Depends(get_db)):
     """Authenticate user and return access token."""
-    # Handle both JSON request and Form request
-    username = form_data.get("username")
-    password = form_data.get("password")
+    username = form_data.username
+    password = form_data.password
     
-    stmt = select(User).where(User.email == username)
+    stmt = select(User).where(or_(User.email == username, User.phone == username))
     result = await db.execute(stmt)
     user = result.scalar_one_or_none()
     
